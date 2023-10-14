@@ -8,7 +8,10 @@ Year2_data = data[data['Year'] == 'Year 2']
 Year3_data = data[data['Year'] == 'Year 3']
 Year4_data = data[data['Year'] == 'Year 4']
 
-#print(Year2_data.head)
+Indiana_State_Data = data[data['University'] == 'Indiana State University']
+Ball_State_Data = data[data['University'] == 'Ball State University']
+Butler_Data = data[data['University'] == 'Butler University']
+
 
 #Plotting the number of orders for each menu item
 order_counts = data['Order'].value_counts()
@@ -62,4 +65,34 @@ plt.xlabel('Menu Item')
 plt.xticks(fontsize=6)
 plt.ylabel('Count')
 plt.title('Year 4 Orders')
+plt.show()
+
+#Menu items ranked by popularity among Indiana State University
+Indiana_State_Orders = Indiana_State_Data['Order'].value_counts()
+print(Indiana_State_Orders)
+Indiana_State_Orders.plot(kind='bar')
+plt.xlabel('Menu Item')
+plt.xticks(fontsize=6)
+plt.ylabel('Count')
+plt.title('Indiana State Orders')
+plt.show()
+
+#Menu items ranked by popularity among Ball State University
+Ball_State_Orders = Ball_State_Data['Order'].value_counts()
+print(Ball_State_Orders)
+Ball_State_Orders.plot(kind='bar')
+plt.xlabel('Menu Item')
+plt.xticks(fontsize=6)
+plt.ylabel('Count')
+plt.title('Ball State Orders')
+plt.show()
+
+#Menu items ranked by popularity among the Butler University
+Butler_Orders = Butler_Data['Order'].value_counts()
+print(Butler_Orders)
+Butler_Orders.plot(kind='bar')
+plt.xlabel('Menu Item')
+plt.xticks(fontsize=6)
+plt.ylabel('Count')
+plt.title('Butler Orders')
 plt.show()
