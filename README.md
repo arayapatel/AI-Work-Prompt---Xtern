@@ -1,6 +1,7 @@
-# AI-Work-Prompt---Xtern
+# Artificial Intelligence Work Prompt
 
-##EDM.py
+
+***EDM.py***
 
 Contains the basic exploratory data analysis for all the data
 
