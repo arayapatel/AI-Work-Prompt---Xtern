@@ -8,3 +8,8 @@ Years and then analyzed the menu orders for each year. The MatPlot library was u
 most popular for each year. The same thing is done for each University through which we can see what menu item sells the most for each university. Images of bar plots are
 attached in the repository.
 
+
+
+***Contents of model.py***
+
+Attempts to use sklearn to create a machine learning model. The model used is Random Forest Classifier. This reads in the excel file and sets the target and feature variables. The model is then trained for each variable and in the end returns a prediction for the target (dependent) variable. The prediction is printed out onto the terminal
